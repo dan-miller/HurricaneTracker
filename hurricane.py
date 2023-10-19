@@ -82,13 +82,13 @@ def plot_point(t, lat, lon, speed, doTimestamp, date):
     else:
         t.color('white')
         t.width(1)
-    
+   
+
     t.goto(lon, lat)
 
     if (doTimestamp):
         t.dot(5)
-        t.write(date)
-    
+
 
 """ DO NOT CHANGE CODE IN THIS FUNCTION
 """
@@ -98,7 +98,7 @@ def hurricane(data):
     counter = 0
     for datapoint in data:
         point = datapoint.split('\t')
-        print(point)
+        # print(point)
 
         # Position the turtle initially
         if counter == 0:
